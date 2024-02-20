@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainPart {
+  position: relative;
+}
+
+.header {
+  padding: 10px;
+  background-color: rgb(255, 106, 0);
+  color: #eee;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main-text-1 {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.main-box-1 {
+  display: flex;
+  justify-content: end;
+}
+
+.main-box-1,
+.main-box-2 {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 150px;
+}
+
+.main-box-1 {
+  transform: translate(350px, 0);
+}
+
+.main-img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 300px;
+  height: 300px;
+}
+
+.main-img-2 {
+  position: absolute;
+  min-width: 300px;
+  height: 300px;
+  right: 0px;
+}

@@ -1,0 +1,101 @@
+.Modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+
+  .main-part-modal {
+    width: 600px;
+    max-height: 500px;
+    min-height: 300px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 15px;
+    height: 100%;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.NoInBasket {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 2rem;
+}
+
+.Item-in-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.Modal-Btns {
+  display: flex;
+  justify-content: end;
+  gap: 0 10px;
+  align-items: end;
+
+  button {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .Modal-Delete-btn {
+    background-color: rgb(255, 0, 0);
+    &:hover {
+      background-color: rgb(135, 0, 0);
+    }
+  }
+
+  .Modal-Bought-btn {
+    background-color: green;
+    &:hover {
+      background-color: rgb(0, 67, 0);
+    }
+  }
+}
+
+.modal-in-basket {
+  overflow-y: scroll;
+  height: 400px;
+  margin-bottom: 5px;
+  
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #b3b3b3;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(107, 107, 107);
+    border: 1px solid rgb(107, 107, 107);
+  }
+}
+
+    
