@@ -1,5 +1,6 @@
 Eazy part of site, just for fun
 By glorygangaga
+Without adaptability.
 
 # with TypeScript
 
